@@ -18,14 +18,12 @@
 
 <script>
 import navout from './components/navout.vue';
-import navin from './components/navin.vue';
 import footer from './components/footer.vue';
 
 export default {
 	name: 'App',
 	components:{
 		'app-navout': navout,
-		'app-navin' : navin,
 		'app-footer': footer
 		
 	},

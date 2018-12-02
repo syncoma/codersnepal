@@ -31,6 +31,7 @@
     </v-layout>
   </v-container>
 </template>
+
 <script type="text/javascript">
   export default {
     data() {
@@ -38,16 +39,11 @@
         email: '',
         password: ''
       }
-    },
-    methods:{
-      onLogin(){
-        console.log(this.email);
-        console.log('hello');
-      }
     }
-
   }
 </script>
+
+
 <style>
 #login {
   text-align: center;
