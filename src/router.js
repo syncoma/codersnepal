@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Createclient from './views/createclient.vue'
 import Login from './views/login.vue'
 import Logged from './views/logged.vue'
+import Signup from './views/signup.vue'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
     path: '/logged',
     name: 'logged',
     component: Logged
+  },
+   {
+    path: '/signup',
+    name: 'signup',
+    component: Signup
   }
   ]
 })

@@ -1,5 +1,5 @@
 <template>
-    <div >
+    <div id="navin">
         <v-toolbar color="white">
             <div class="topsideblock"></div>
             <v-avatar size="75px" tile>
@@ -87,12 +87,12 @@ export default {
 }
 </script>
 <style type="text/css">
-.v-toolbar__content,
+#navin .v-toolbar__content,
 .v-toolbar__extension {
     padding: 0px 24px 0px 0px;
 }
 
-.topsideblock {
+#navin .topsideblock {
     height: 100%;
     width: 30px;
     background-color: #1B264F;
@@ -104,7 +104,7 @@ export default {
 
 
 
-.searchWrapper {
+#navin .searchWrapper {
       
       padding: 4px 12px;
       color: rgba(0,0,0,.70);
@@ -114,20 +114,20 @@ export default {
       margin-left:20px;
       width: 375px;
     }
-.textarea{
+#navin .textarea{
   width: 350px;
   outline: none;
 }
     
 /* #################### btn ######################## */
-.btnsize {
+#navin .btnsize {
     height: 28px;
     width: 28px;
 }
 
 /* #################### menu ######################## */
 
-.v-tabs__wrapper {
+#navin .v-tabs__wrapper {
     padding-left: 30px;
 }
 </style>

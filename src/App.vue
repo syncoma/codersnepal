@@ -1,6 +1,9 @@
 <template>
 	<v-app>
-		<app-navbar></app-navbar>
+		<app-navout></app-navout>
+		<!-- <template >
+		<app-navin></app-navin>
+		</template> -->
 		<v-content>
 			
 				<router-view></router-view>
@@ -14,13 +17,15 @@
 </template>
 
 <script>
+import navout from './components/navout.vue';
 import navin from './components/navin.vue';
 import footer from './components/footer.vue';
 
 export default {
 	name: 'App',
 	components:{
-		'app-navbar': navin,
+		'app-navout': navout,
+		'app-navin' : navin,
 		'app-footer': footer
 		
 	},
@@ -28,7 +33,7 @@ export default {
  
   data () {
     return {
-      //
+      show: false
     }
   }
 }
@@ -37,7 +42,7 @@ export default {
 	html{
 		overflow-y: auto;
 	}
-	#app{
+#app{
 		font-family: 'KoHo', sans-serif;
 	}
 </style>
