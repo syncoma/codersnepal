@@ -37,7 +37,10 @@ export default {
 	html{
 		overflow-y: auto;
 	}
-	#app{
-		font-family: 'KoHo', sans-serif;
-	}
+	@import url('https://fonts.googleapis.com/css?family=KoHo');
+
+    #app {
+      font-family: 'KoHo', Helvetica, Arial, sans-serif;
+  }
+     
 </style>
