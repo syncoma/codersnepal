@@ -32,6 +32,7 @@
     </v-layout>
   </v-container>
 </template>
+
 <script type="text/javascript">
   export default {
     data() {
@@ -39,11 +40,15 @@
         email: '',
         password: ''
       }
+<<<<<<< HEAD
    
+=======
+>>>>>>> 60a7ed376a2cb995b27bfd6f2727e867c26a334a
     }
-
   }
 </script>
+
+
 <style>
 #login {
   text-align: center;

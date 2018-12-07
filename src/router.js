@@ -7,9 +7,14 @@ import Logged from './views/logged.vue'
 import PostVacancy from './views/postvacancy.vue'
 import PostProject from './views/postproject.vue'
 import Signup from './views/signup.vue'
+<<<<<<< HEAD
 import createWorker from './views/createworker.vue'
 
 
+=======
+import Chooseskill from './views/chooseskill.vue'
+import Csstest from './views/csstest.vue'
+>>>>>>> 60a7ed376a2cb995b27bfd6f2727e867c26a334a
 
 Vue.use(Router)
 
@@ -55,7 +60,20 @@ export default new Router({
     path: '/signup',
     name: 'signup',
     component: Signup
+<<<<<<< HEAD
 
+=======
+  },
+   {
+    path: '/chooseskill',
+    name: 'chooseskill',
+    component: Chooseskill
+  },
+  {
+    path:'/csstest',
+    name:'csstest',
+    component: Csstest 
+>>>>>>> 60a7ed376a2cb995b27bfd6f2727e867c26a334a
   }
   ]
 })

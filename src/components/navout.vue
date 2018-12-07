@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-toolbar color="white">
+        <v-toolbar color="white" app>
             <div class="topsideblock"></div>
             <v-avatar size="75px" tile>
                 <v-img src="./img/logo.png" alt="" position="left" contain max-height="40px" class="mx-3"></v-img>

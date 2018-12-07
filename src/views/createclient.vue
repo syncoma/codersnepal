@@ -6,7 +6,11 @@
                     <v-responsive>
                         <v-toolbar height="50px" class="secondaryBlue mb-3">
                             <v-icon class="ml-4 " dark>person</v-icon>
+<<<<<<< HEAD
                             <v-toolbar-title prepend-icon="person" class="white--text title font-weight-bold py-1">Create your profile</v-toolbar-title>
+=======
+                            <v-toolbar-title prepend-icon="person" class="white--text title py-1">Create your profile</v-toolbar-title>
+>>>>>>> 60a7ed376a2cb995b27bfd6f2727e867c26a334a
                         </v-toolbar>
                         <v-card-text>
                             <span  class="title my-1 ml-4 font-weight-bold">Client Details</span>
