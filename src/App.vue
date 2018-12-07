@@ -1,13 +1,13 @@
 <template>
-	<v-app>
+	<v-app class="lightgreybg">
 		<app-navout></app-navout>
 		<!-- <template >
 		<app-navin></app-navin>
 		</template> -->
 		<v-content>
-			
+			<v-fade-transition mode="out-in">
 				<router-view></router-view>
-			
+			 </v-fade-transition>
 		</v-content>
 		<app-footer></app-footer>
 		

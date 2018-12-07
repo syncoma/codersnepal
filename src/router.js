@@ -4,6 +4,8 @@ import Createclient from './views/createclient.vue'
 import Login from './views/login.vue'
 import Logged from './views/logged.vue'
 import Signup from './views/signup.vue'
+import Chooseskill from './views/chooseskill.vue'
+import Csstest from './views/csstest.vue'
 
 Vue.use(Router)
 
@@ -30,6 +32,16 @@ export default new Router({
     path: '/signup',
     name: 'signup',
     component: Signup
+  },
+   {
+    path: '/chooseskill',
+    name: 'chooseskill',
+    component: Chooseskill
+  },
+  {
+    path:'/csstest',
+    name:'csstest',
+    component: Csstest 
   }
   ]
 })
