@@ -1,26 +1,24 @@
 <template>
-	<v-app>
-		<app-navbar></app-navbar>
-		<v-content>
-			
-				<router-view></router-view>
-			
-		</v-content>
-		<app-footer></app-footer>
-		
-		
-	</v-app>
- 
+    <v-app>
+        <app-navin></app-navin>
+        <!-- <template >
+		<app-navin></app-navin>
+		</template> -->
+        <v-content>
+            <router-view></router-view>
+        </v-content>
+        <app-footer></app-footer>
+    </v-app>
 </template>
-
 <script>
-import navin from './components/navin.vue';
+    import navin from './components/navin.vue';
 import footer from './components/footer.vue';
 
 export default {
 	name: 'App',
 	components:{
-		'app-navbar': navin,
+		
+		'app-navin' : navin,
 		'app-footer': footer
 		
 	},
@@ -28,19 +26,17 @@ export default {
  
   data () {
     return {
-      //
+      show: false
     }
   }
 }
 </script>
 <style type="text/css">
-	html{
-		overflow-y: auto;
-	}
-	@import url('https://fonts.googleapis.com/css?family=KoHo');
+html {
+    overflow-y: auto;
+}
 
-    #app {
-      font-family: 'KoHo', Helvetica, Arial, sans-serif;
-  }
-     
+#app {
+    font-family: 'KoHo', sans-serif;
+}
 </style>

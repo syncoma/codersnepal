@@ -1,6 +1,6 @@
 <template>
-    <div >
-        <v-toolbar color="white">
+    <div id="navin">
+        <v-toolbar color="white" app tabs>
             <div class="topsideblock"></div>
             <v-avatar size="75px" tile>
                 <v-img src="./img/logo.png" alt="" position="left" contain max-height="40px" class="mx-3"></v-img>
@@ -68,13 +68,16 @@
       </v-card>
     </v-menu>
   </div></span>
-        </v-toolbar>
-        <v-tabs color="#1B264F" dark slider-color="white">
+
+       
+            <v-tabs slot="extension" color="#1B264F" dark slider-color="white">
             <v-tab>HOME</v-tab>
             <v-tab>HOW IT WORKS</v-tab>
             <v-tab>BROWSE VACANCY</v-tab>
             <v-tab>BROWSE PROJECTS</v-tab>
         </v-tabs>
+        
+        </v-toolbar>
     </div>
 </template>
 <script type="text/javascript">
@@ -87,12 +90,12 @@ export default {
 }
 </script>
 <style type="text/css">
-.v-toolbar__content,
+#navin .v-toolbar__content,
 .v-toolbar__extension {
-    padding: 0px 24px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
-.topsideblock {
+#navin .topsideblock {
     height: 100%;
     width: 30px;
     background-color: #1B264F;
@@ -104,7 +107,7 @@ export default {
 
 
 
-.searchWrapper {
+#navin .searchWrapper {
       
       padding: 4px 12px;
       color: rgba(0,0,0,.70);
@@ -114,20 +117,20 @@ export default {
       margin-left:20px;
       width: 375px;
     }
-.textarea{
+#navin .textarea{
   width: 350px;
   outline: none;
 }
     
 /* #################### btn ######################## */
-.btnsize {
+#navin .btnsize {
     height: 28px;
     width: 28px;
 }
 
 /* #################### menu ######################## */
 
-.v-tabs__wrapper {
+#navin .v-tabs__wrapper {
     padding-left: 30px;
 }
 </style>
